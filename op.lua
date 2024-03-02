@@ -27,7 +27,7 @@
 		
 	if not isfolder(ConFigFolderPath) then makefolder(ConFigFolderPath) end
 
-	--if not isfile(ConFigFolderPath .. "/") then writefile(ConFigFolderPath .. "/", "return false") end
+	if not isfile(ConFigFolderPath .. "/") then writefile(ConFigFolderPath .. "/", "return false") end
 	if not isfile(ConFigFolderPath .. "/AutoDrinkEnabled") then writefile(ConFigFolderPath .. "/AutoDrinkEnabled", "return false") end
 	if not isfile(ConFigFolderPath .. "/AutoPresteigeEnabled") then writefile(ConFigFolderPath .. "/AutoPresteigeEnabled", "return false") end
 	if not isfile(ConFigFolderPath .. "/AutoEquipDrinkEnabled") then writefile(ConFigFolderPath .. "/AutoEquipDrinkEnabled", "return false") end
