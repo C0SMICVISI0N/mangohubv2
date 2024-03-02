@@ -17,38 +17,38 @@
 	-- Config
 	getgenv().config = {}
 	local Config = getgenv().config
-	Config.AutoDrinkEnabled = false
-	Config.AutoPresteigeEnabled = false
-	Config.AutoEquipDrinkEnabled = false
-	Config.AutoGrabGems = false
-	Config.AutoUltraPresteigeEnabled = false
+	Config.AutoDrinkEnabled = true
+	Config.AutoPresteigeEnabled = true
+	Config.AutoEquipDrinkEnabled = true
+	Config.AutoGrabGems = true
+	Config.AutoUltraPresteigeEnabled = true
 
-	local ConFigFolderPath = "MangoHubV2/Config/BSR"
+	--local ConFigFolderPath = "MangoHubV2/Config/BSR"
 		
-	if not isfolder(ConFigFolderPath) then makefolder(ConFigFolderPath) end
+	--if not isfolder(ConFigFolderPath) then makefolder(ConFigFolderPath) end
 
-	if not isfile(ConFigFolderPath .. "/") then writefile(ConFigFolderPath .. "/", "return false") end
-	if not isfile(ConFigFolderPath .. "/AutoDrinkEnabled") then writefile(ConFigFolderPath .. "/AutoDrinkEnabled", "return false") end
-	if not isfile(ConFigFolderPath .. "/AutoPresteigeEnabled") then writefile(ConFigFolderPath .. "/AutoPresteigeEnabled", "return false") end
-	if not isfile(ConFigFolderPath .. "/AutoEquipDrinkEnabled") then writefile(ConFigFolderPath .. "/AutoEquipDrinkEnabled", "return false") end
-	if not isfile(ConFigFolderPath .. "/AutoGrabGems") then writefile(ConFigFolderPath .. "/AutoGrabGems", "return false") end
-	if not isfile(ConFigFolderPath .. "/AutoUltraPresteigeEnabled") then writefile(ConFigFolderPath .. "/AutoUltraPresteigeEnabled", "return false") end
+	--if not isfile(ConFigFolderPath .. "/") then writefile(ConFigFolderPath .. "/", "return false") end
+	--if not isfile(ConFigFolderPath .. "/AutoDrinkEnabled") then writefile(ConFigFolderPath .. "/AutoDrinkEnabled", "return false") end
+	--if not isfile(ConFigFolderPath .. "/AutoPresteigeEnabled") then writefile(ConFigFolderPath .. "/AutoPresteigeEnabled", "return false") end
+	--if not isfile(ConFigFolderPath .. "/AutoEquipDrinkEnabled") then writefile(ConFigFolderPath .. "/AutoEquipDrinkEnabled", "return false") end
+	--if not isfile(ConFigFolderPath .. "/AutoGrabGems") then writefile(ConFigFolderPath .. "/AutoGrabGems", "return false") end
+	--if not isfile(ConFigFolderPath .. "/AutoUltraPresteigeEnabled") then writefile(ConFigFolderPath .. "/AutoUltraPresteigeEnabled", "return false") end
 
 
-	Config.AutoDrinkEnabled = loadstring(readfile(ConFigFolderPath .. "/AutoDrinkEnabled"))()
-	Config.AutoPresteigeEnabled = loadstring(readfile(ConFigFolderPath .. "/AutoPresteigeEnabled"))()
-	Config.AutoEquipDrinkEnabled = loadstring(readfile(ConFigFolderPath .. "/AutoEquipDrinkEnabled"))()
-	Config.AutoGrabGems = loadstring(readfile(ConFigFolderPath .. "/AutoGrabGems"))()
-	Config.AutoUltraPresteigeEnabled = loadstring(readfile(ConFigFolderPath .. "/AutoUltraPresteigeEnabled"))()
+	--Config.AutoDrinkEnabled = loadstring(readfile(ConFigFolderPath .. "/AutoDrinkEnabled"))()
+	--Config.AutoPresteigeEnabled = loadstring(readfile(ConFigFolderPath .. "/AutoPresteigeEnabled"))()
+	--Config.AutoEquipDrinkEnabled = loadstring(readfile(ConFigFolderPath .. "/AutoEquipDrinkEnabled"))()
+	--Config.AutoGrabGems = loadstring(readfile(ConFigFolderPath .. "/AutoGrabGems"))()
+	--Config.AutoUltraPresteigeEnabled = loadstring(readfile(ConFigFolderPath .. "/AutoUltraPresteigeEnabled"))()
 
 
 	function SaveConfig()
-		
-		writefile(ConFigFolderPath .. "/AutoDrinkEnabled", "return " .. tostring(Config.AutoDrinkEnabled))
-		writefile(ConFigFolderPath .. "/AutoPresteigeEnabled", "return " .. tostring(Config.AutoPresteigeEnabled))
-		writefile(ConFigFolderPath .. "/AutoEquipDrinkEnabled", "return " .. tostring(Config.AutoEquipDrinkEnabled))
-		writefile(ConFigFolderPath .. "/AutoGrabGems", "return " .. tostring(Config.AutoGrabGems))
-		writefile(ConFigFolderPath .. "/AutoUltraPresteigeEnabled", "return " .. tostring(Config.AutoUltraPresteigeEnabled))
+		print("save dont work so didn't save")
+		--writefile(ConFigFolderPath .. "/AutoDrinkEnabled", "return " .. tostring(Config.AutoDrinkEnabled))
+		--writefile(ConFigFolderPath .. "/AutoPresteigeEnabled", "return " .. tostring(Config.AutoPresteigeEnabled))
+		--writefile(ConFigFolderPath .. "/AutoEquipDrinkEnabled", "return " .. tostring(Config.AutoEquipDrinkEnabled))
+		--writefile(ConFigFolderPath .. "/AutoGrabGems", "return " .. tostring(Config.AutoGrabGems))
+		--writefile(ConFigFolderPath .. "/AutoUltraPresteigeEnabled", "return " .. tostring(Config.AutoUltraPresteigeEnabled))
 
 	end
 
