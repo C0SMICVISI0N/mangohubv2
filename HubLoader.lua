@@ -4,6 +4,7 @@ local PID = game.PlaceId
 local Scripts = {
 
 	[14340423581] = "BR";
+	[1747207098] = "BS";
 
 }
 
